@@ -1,8 +1,6 @@
 ---
 published: true
 ---
-## The Hazards of Blogging
-
 I decided to start a blog about coding stuff and whatever's on my mind because I realize I don't write regularly outside of work emails and little back-and-forth chats with coworkers. But I enjoy writing. I also don't do much coding outside of work, and at work my focus isn't to stay on the bleeding edge of technology trends. My focus at work is to meet business goals. If I get to have fun playing with a new technology at the same time, or deliver more value because I'm doing something better, great. But that's not the goal. And so to give myself an excuse to write and code more, I've started this blog.
 
 I don't know much about keeping a good blog -- whatever I write anything, years later I look back and cringe at how dumb it reads. Years down the road, I expect to look at this and cringe -- but I hope at that point in time I'll also recognize whatever I'd write at that point in time would draw the same reaction from an equally distant future self. I wonder how many professional writers experience this same feeling.
