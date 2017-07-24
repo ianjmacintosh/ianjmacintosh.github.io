@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 Following the steps listed in Lindley's article about [Learning ES2015](http://developer.telerik.com/featured/six-steps-for-approaching-the-next-javascript/), I started by skipping over step 1 -- I _think_ I know enough ES5 to get started with learning ES2015. Then comes setting up a local ES6 development environment. My first thought is "Babel" and that this article seems a little out of date if it's even mentioning Traceur and JSPM. So sure enough I go to Babel's site, run the npm install command, and am immediately faced with the question of whether or not I should set up some kind of task runner to watch and transpile Babel as I write it. Seems like a typical problem I run into learning JS stuff today -- one thing leads immediately into another, and before I know it I'm trying to think of a good directory structure and tooling setup for easily transpiling. Options now seem to be Grunt, gulp, npm run-scripts, and a [taskfile](https://hackernoon.com/introducing-the-taskfile-5ddfe7ed83bd) format that sounded really appealing.
 
