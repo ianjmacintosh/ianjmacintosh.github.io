@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 So I've already got a bunch of changes I want to make to my last post, but the whole point of this blog is to write new posts about coding and learning new things. The urge to edit-edit-edit and polish is definitely present and strong.
 
