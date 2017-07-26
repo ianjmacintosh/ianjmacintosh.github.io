@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 Now I've actually set up Babel for my project, which takes a few more steps than just running
 ```bash
