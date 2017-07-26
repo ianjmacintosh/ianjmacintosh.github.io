@@ -13,8 +13,8 @@ Take a second to acknowledge that all of these steps seem so trivial that I woul
 So this is neat, now I've gotten through Step 2. My next step is going to be to read some articles and then type up short critiques of them and describe what I learned. The articles are all probably a little outdated in the sense that there may be better available now, but I may as well start with these. I'm also going to go over Rauschmeyer's listing and brief description of the core [ES6 features](http://exploringjs.com/es6/ch_core-features.html)
 
 Articles to read and critique:
-https://github.com/lukehoban/es6features
-http://www.2ality.com/2014/08/es6-today.html
-http://tagtree.tv/courses/expert-es6
-http://learnharmony.org/
-http://es6-features.org/
+* [https://github.com/lukehoban/es6features](https://github.com/lukehoban/es6features)
+* [http://www.2ality.com/2014/08/es6-today.html](http://www.2ality.com/2014/08/es6-today.html)
+* [http://tagtree.tv/courses/expert-es6](http://tagtree.tv/courses/expert-es6)
+* [http://learnharmony.org/](http://learnharmony.org/)
+* [http://es6-features.org/](http://es6-features.org/)
