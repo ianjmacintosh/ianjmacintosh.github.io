@@ -1,0 +1,12 @@
+---
+published: false
+---
+I started with [Luke Hoban's ES6 Features repo](https://github.com/lukehoban/es6features) and quickly got intimidated. Yikes! What a big list of features with terse descriptions and illustrations that leap headlong into illustrating the specific concept. I think this will be good for when I have a better high-level idea of the new features. For now, it seems like Rauschmeyer's list in Ch4 of his book seems just as good if not better because I've at least heard of dude, and _his_ concise definitions seem easier for me to parse. I bet when I get comfortable I'll see some advantages to @lukehoban's approach.
+
+Reading over Rauschmeyer's old article [Using ECMAScript 6 today](http://2ality.com/2014/08/es6-today.html) I was able to stay reasonably engaged for the whole article, although my eyes glazed over a little bit in parts. At this point I feel like I'm starting to get my arms around how much new stuff there is in ES6, and it's not a completely overwhelming amount. I'm looking forward to working with some of this stuff day-to-day and taking it for granted after using it for a while. Some (of many) things that intimidate me are `.map()` even though I know that's an ES5 feature, arrow functions even though I know there's really nothing to them, the spread operator because I don't get it and feel like I should, what exactly people mean when they say `const` is read-only. I think this means that all the new features scare me, but those are the ones that I can at least describe.
+
+The article from [tagtree](http://tagtree.tv/courses/expert-es6) looks like it's gone the way of the dodo, so I'm going to skip over that and move to the interactive [Learn Harmony](http://learnharmony.org/) exercises. Getting right into it, they start with the `filter()` and `map()` methods, which makes me think that my ES5 is worse than I thought. I never use these things, even though I know they're supposed to be incredibly useful. As I go through this, it looks like it's not as interactive as I thought. I thought this was going to be a bunch of exercises, and instead it's just a bunch of demos I can run and modify for whatever reason.
+
+This last link which provides an organized way of browsing through new features is also good: [ECMAScript 6: New Features](http://es6-features.org/).
+
+I feel like by skimming these, I'm at least starting to get an idea of what "ES6" is, but I want to get acquainted with each feature by using it. I imagine some will show their usefulness dramatically more often than others.
