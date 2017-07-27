@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 I started with [Luke Hoban's ES6 Features repo](https://github.com/lukehoban/es6features) and quickly got intimidated. Yikes! What a big list of features with terse descriptions and illustrations that leap headlong into illustrating the specific concept. I think this will be good for when I have a better high-level idea of the new features. For now, it seems like Rauschmeyer's list in Ch4 of his book seems just as good if not better because I've at least heard of dude, and _his_ concise definitions seem easier for me to parse. I bet when I get comfortable I'll see some advantages to @lukehoban's approach.
 
