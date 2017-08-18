@@ -59,7 +59,9 @@ My solution was to use the User Timing API to record a mark at the top of the `<
   performance.mark("mark_render_form");
   
   // And assuming you've got your first mark around, you can complete
-  performance.measure("measure_time_from_head_until_form_render", "mark_start_loading_head", "mark_render_form");
+  performance.measure("measure_time_from_head_until_form_render", // Name your measure
+    "mark_start_loading_head",  // Start mark
+    "mark_render_form");        // Finish mark
   console.log(performance.getEntriesByName("measure_time_from_head_until_form_render")[0].duration + "ms until loaded form");
 }());
 ```
