@@ -10,6 +10,8 @@ So the question I needed to answer was: if this performance recommendation is go
 My solution was to use the User Timing API to record a mark at the top of the `<head>` tag, another mark after the call to render the form, and measure the difference. I determined the difference varied depending on network conditions, but was fairly consistently 300-400ms slower.
 
 ### Measurement 1: Old Approach to Loading Handlebars Content
+
+##### index.html
 ```html
 <head>
   
@@ -30,6 +32,8 @@ My solution was to use the User Timing API to record a mark at the top of the `<
 ```
 
 ### Measurement 2: New Approach to Loading Handlebars Content
+
+##### index.html
 ```html
 <head>
   <script>
@@ -45,8 +49,9 @@ My solution was to use the User Timing API to record a mark at the top of the `<
 </body>
 ```
 
+##### do-handlebars-things.js
 ```js:do-handlebars-things.js
-(function doAllTheThings() {
+(function doHandlebarsThings() {
   // Do a bunch of stuff
   ...
 
