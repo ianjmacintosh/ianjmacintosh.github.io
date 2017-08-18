@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 Moving blocking JS calls from the top of your page to the bottom is a very well-established performance recommendation -- you shouldn't block your visitors from _seeing_ your content before it becomes interactive. I followed this advice to update our entire site's behavior, even on pages that used Handlebars to render big important parts of the page. On those pages, I put a `<script>` tag right in the middle of the page to render the form then and there. But now that the dependencies weren't there, I had to make that script call at the bottom of the page.
 
@@ -12,6 +12,13 @@ My solution was to use the User Timing API to record a mark at the top of the `<
 ### Measurement 1: Old Approach to Loading Handlebars Content
 ```html
 <head>
+  
+  <script src="Handlebars.min.js"></script>
+  <script src="templates.js"></script>
+  ...
+</head>
+<body>
+  <div class="handlebars-content"></div>
   <script>
     // Do Handlebars stuff here
     ...
@@ -19,27 +26,7 @@ My solution was to use the User Timing API to record a mark at the top of the `<
     // Make a mark
     performance.mark("mark_start_loading_head");
   </script>
-  ...
-</head>
-<body>
-  <script src="Handlebars.min.js"></script>
-  <script src="templates.js"></script>
-  <script src="all-the-things.js"></script>
 </body>
-```
-
-```js
-(function doAllTheThings() {
-  // Do a bunch of stuff
-  ...
-
-  // Then mark this point in time
-  performance.mark("mark_render_form");
-  
-  // And assuming you've got your first mark around, you can complete
-  performance.measure("measure_time_from_head_until_form_render", "mark_start_loading_head", "mark_render_form");
-  console.log(performance.getEntriesByName("measure_time_from_head_until_form_render")[0].duration + "ms until loaded form");
-}());
 ```
 
 ### Measurement 2: New Approach to Loading Handlebars Content
@@ -52,11 +39,13 @@ My solution was to use the User Timing API to record a mark at the top of the `<
 </head>
 <body>
   ...
-  <script src="all-the-things.js"></script>
+  <script src="Handlebars.min.js"></script>
+  <script src="templates.js"></script>
+  <script src="do-handlebars-things.js"></script>
 </body>
 ```
 
-```js:all-the-things.js
+```js:do-handlebars-things.js
 (function doAllTheThings() {
   // Do a bunch of stuff
   ...
