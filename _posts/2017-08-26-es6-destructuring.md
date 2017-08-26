@@ -12,7 +12,7 @@ Destructuring is a way of taking values from an object to work with them directl
 ```js
 var options = {
 	"autoplay": true,
-    "title": "We Never Left Tibet",
+	"title": "We Never Left Tibet",
 	"id": "f0f8tOPUuuGk",
 	"author": "Gavin Andressen",
 };
