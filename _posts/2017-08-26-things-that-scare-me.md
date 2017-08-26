@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 There are a bunch of things in "modern" JS that irrationally scare me. I'm going to make a list of them so I can tackle them one by one. Earlier this morning I mentioned I wanted to learn ES6 techinques one-by-one, so here's a good hitlist of things I should attack.
 
